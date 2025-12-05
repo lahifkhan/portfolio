@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Developer Portfolio - Contact</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#5A5A5A",
+              "background-light": "#F3F4F6",
+              "background-dark": "#0B0C10",
+              "card-dark": "rgba(255, 255, 255, 0.05)",
+              "border-dark": "rgba(255, 255, 255, 0.1)",
+            },
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+              sans: ["Poppins", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+            },
+            animation: {
+              "delayed-pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .blob-shape {
+        border: 1.5px solid rgba(255, 255, 255, 0.2);
+        border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+        animation: morph 8s ease-in-out infinite;
+      }
+      .blob-shape-inner {
+        border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+        animation: morph 8s ease-in-out infinite;
+      }
+      @keyframes morph {
+        0% {
+          border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+        }
+        50% {
+          border-radius: 30% 70% 70% 30% / 30% 70% 30% 70%;
+        }
+        100% {
+          border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+        }
+      }
+      .tech-icon {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .dark .text-glow {
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="min-h-screen p-4">
+      <div
+        class="relative w-full max-w-6xl mx-auto bg-background-light dark:bg-gradient-to-br from-[#12141D] to-[#0A0B0F] text-gray-800 dark:text-gray-300 rounded-lg shadow-lg overflow-hidden"
+      >
+        <header class="absolute top-0 left-0 right-0 z-20 px-8 py-6 md:px-12">
+          <nav class="flex items-center justify-between">
+            <a class="text-2xl font-bold text-gray-900 dark:text-white" href="#"
+              >Mr.Bande</a
+            >
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                href="#"
+                >About</a
+              >
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                href="#"
+                >Resume</a
+              >
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                href="#"
+                >Portfolio</a
+              >
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                href="#"
+                >Services</a
+              >
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                href="#"
+                >Contact</a
+              >
+            </div>
+          </nav>
+        </header>
+        <main class="relative z-10">
+          <section
+            class="flex flex-col md:flex-row items-center justify-between px-8 py-24 md:px-12 md:py-32"
+          >
+            <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+              <h1
+                class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 text-glow"
+              >
+                Bandeye Khodaa
+              </h1>
+              <p class="text-lg text-gray-700 dark:text-gray-400 mb-8">
+                MERN stack developer
+              </p>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-sm text-gray-600 dark:text-gray-400 mb-10"
+              >
+                <div class="flex items-center justify-center md:justify-start">
+                  <span class="w-2 h-2 rounded-full bg-primary mr-3"></span>
+                  Birthday: 24 July 1999
+                </div>
+                <div class="flex items-center justify-center md:justify-start">
+                  <span class="w-2 h-2 rounded-full bg-primary mr-3"></span>
+                  Age: 24
+                </div>
+                <div class="flex items-center justify-center md:justify-start">
+                  <span class="w-2 h-2 rounded-full bg-primary mr-3"></span>
+                  City: Iran, Tehran
+                </div>
+                <div class="flex items-center justify-center md:justify-start">
+                  <span class="w-2 h-2 rounded-full bg-primary mr-3"></span>
+                  Freelancer: Available
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4"
+              >
+                <button
+                  class="w-full sm:w-auto bg-primary text-white py-3 px-8 rounded-lg font-medium hover:bg-opacity-80 transition-colors"
+                >
+                  Contact me
+                </button>
+                <button
+                  class="w-full sm:w-auto bg-transparent text-gray-800 dark:text-white border border-gray-400 dark:border-gray-600 py-3 px-8 rounded-lg font-medium hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+                >
+                  View my work
+                </button>
+              </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center items-center relative">
+              <div class="relative w-72 h-72 md:w-96 md:h-96">
+                <div class="absolute inset-0 blob-shape"></div>
+                <div class="absolute inset-0 p-2 blob-shape-inner">
+                  <img
+                    alt="Profile picture of Bandeye Khodaa"
+                    class="w-full h-full object-cover rounded-full blob-shape-inner saturate-150"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf1BcvZKYZJ9KpvsaNSCrUC1OWv-jcRVVNyFkupZgAybQ1NBIRrWGFK87pQ9BZIl6X4gEMq5JFcuxIhxug8L4BUTGziK_15NnoiJcDgqKtUxSOlt94vwd9YDO-iMop5uodxYSIqX2UmhGNO1oWIxHyRiVgCO-ybsCOyX-EXs86l2ZSseHe0GqlPIKhVO3ETxbiUIdhgpw3mrwk7xNaWkSg1IY4t4fTl15U9UZ2baGUsQox7TpDCjrH385Pf-8-of64HhYX6fHss-Vr"
+                    style="filter: contrast(1.1) brightness(0.9)"
+                  />
+                </div>
+                <div
+                  class="absolute -top-4 -left-4 w-16 h-16 tech-icon rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <img
+                    alt="MongoDB icon"
+                    class="w-8 h-8"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIlrXXCguAPG-DDj2jXLbqNgMfuCwt6w-KLuk7fs9iF11va-f3U3HS67_kENLwvo6D8yUBfCiOHJxDIXj2UVekx5Ma8yUC2vuWLDExDqNHi3P-N20UVyF0hI8SfOZzT6qOa9dUfkAWroNRP-NJYPOFnXJX7_6AoIReiw_ONgtEltm-JYQXSsuC42TiKuThEZo75yqIXi8Q6WDdbOWnJb19Jo1FKzgEQaOc5xsBuGxs9VFmY5U51oL33IxvE7t6XzyVB5EHkV2ZSRRS"
+                  />
+                </div>
+                <div
+                  class="absolute top-1/4 -right-8 w-14 h-14 tech-icon rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <img
+                    alt="Express.js icon"
+                    class="w-8 h-8"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiQv8_i0c-B2jvQvbBTrNeLHfNshm3eEyEsuYbk3UlGcGm4wFNtnbjPn1Kowb5fS2opHm-6Od1np0Tg70E1EqJNgEaxyUGbMIO9Ii1g-4Ti3N3sTKgAso6LwJZcr0ZgSfASONqNybbltpGSJRPBYvrf1S4amASBjgPrwK2EDUk9nwigd0lDvk4o9vogI89UMgzCVeOPa3lElN2dO_fTDCzS7y2Vc2ELGEQ1QtuyKa10GA3W2YCmR2zUppSQBXtdBjltR9wuExk4BxK"
+                  />
+                </div>
+                <div
+                  class="absolute -bottom-8 right-0 w-20 h-20 tech-icon rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <img
+                    alt="React icon"
+                    class="w-12 h-12"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuChGYfhjTrdVfTnc2CwRivy6PqZ1GEk5lsl2KrS8OK10ws_wPs_6E2b7nsnKiE4KAqXoisVHd55_3_t5qS1x1TZqg07Xh_EwgN9JhNTQKXpT-WXHHWiylGp5TpTsSCkj1-cAolpBPLI0wf1OJ3f5u9tMoAPerN7p0VoK4JHj1s9Jeb2UaUfzNHcd-jSpeSDKTtT1oiNJm_oz2UgZVMrGesXnDYu-n93xWGc32mfsWCg8sn5SA9F1pbmFQnhIRyTAEIWvTk3cScZ0ghr"
+                  />
+                </div>
+                <div
+                  class="absolute bottom-8 -left-10 w-16 h-16 tech-icon rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <img
+                    alt="Node.js icon"
+                    class="w-9 h-9"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvwlQgYsouZMHt684G_AFUqyGROZp7ozbqx7VWrIlC6FyFtbXsTrY7twNxxFT4vexZULP-VgAXJvoEHK4AbemvJg5LAOWC2N2GUJT-HIBxeucvNGwj-kh5YzwpfoD9vfBRgQgzvTf-5JfMt2Ob-RSJSOHAXYuy--yv64ZhoaAUqzDkpMotwZA1e_brpKEFCOTdKZQvplxtFHoBobOWzko7iAt_btzg0F1QEexzSYw70OgTOwCHMQZPARkY1WRjV8rXioYuDcTuzYGN"
+                  />
+                </div>
+              </div>
+              <div
+                class="absolute top-0 right-0 w-48 h-48 bg-purple-600 rounded-full mix-blend-screen filter blur-3xl opacity-20 dark:opacity-30 animate-pulse"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 w-48 h-48 bg-blue-600 rounded-full mix-blend-screen filter blur-3xl opacity-20 dark:opacity-30 animate-delayed-pulse"
+                style="animation-delay: 2000ms"
+              ></div>
+            </div>
+          </section>
+          <section
+            class="px-8 py-16 md:px-12 md:py-24 bg-background-light dark:bg-black/10 relative overflow-hidden"
+          >
+            <div
+              class="absolute top-0 right-0 w-64 h-64 bg-purple-600/50 rounded-full mix-blend-screen filter blur-3xl opacity-10 dark:opacity-10 animate-pulse"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-72 h-72 bg-blue-600/50 rounded-full mix-blend-screen filter blur-3xl opacity-10 dark:opacity-10 animate-delayed-pulse"
+              style="animation-delay: 1000ms"
+            ></div>
+            <div class="relative z-10 max-w-6xl mx-auto">
+              <div class="text-center mb-16">
+                <h2
+                  class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 text-glow"
+                >
+                  About Me
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                  A glimpse into my journey, philosophy, and what drives me as a
+                  developer.
+                </p>
+              </div>
+              <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="space-y-8">
+                  <div
+                    class="bg-card-dark border border-border-dark p-6 rounded-lg transition-all duration-300 hover:border-white/20 hover:scale-105"
+                  >
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                      My Journey
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                      Hello! I'm Bandeye Khodaa, a MERN stack developer with a
+                      deep passion for creating elegant, efficient, and
+                      user-friendly web applications. My journey into coding
+                      began with a fascination for transforming ideas into
+                      tangible digital experiences that can impact people
+                      globally.
+                    </p>
+                  </div>
+                  <div
+                    class="bg-card-dark border border-border-dark p-6 rounded-lg transition-all duration-300 hover:border-white/20 hover:scale-105"
+                  >
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                      Core Philosophy
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                      My philosophy is rooted in continuous learning and
+                      creative problem-solving. I thrive on challenges and
+                      believe the best solutions come from a blend of technical
+                      expertise, creative thinking, and a user-centric approach.
+                      I'm always exploring new technologies to broaden my
+                      skillset.
+                    </p>
+                  </div>
+                </div>
+                <div class="space-y-8 md:mt-16">
+                  <div
+                    class="bg-card-dark border border-border-dark p-6 rounded-lg transition-all duration-300 hover:border-white/20 hover:scale-105"
+                  >
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                      Aspirations &amp; Interests
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                      Beyond coding, I'm an avid follower of tech trends, a
+                      lover of minimalist design, and enjoy contributing to
+                      open-source projects. My goal is to leverage my skills to
+                      build applications that are not only functional and robust
+                      but also provide a seamless and enjoyable experience. I'm
+                      excited to be a part of shaping the future of the web.
+                    </p>
+                  </div>
+                  <div
+                    class="bg-card-dark/50 border border-border-dark/50 p-6 rounded-lg text-center"
+                  >
+                    <p class="text-lg text-white italic">
+                      "Code is like humor. When you have to explain it, it’s
+                      bad."
+                    </p>
+                    <span class="mt-2 block text-sm text-gray-500"
+                      >- Cory House</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="px-8 py-16 md:px-12 md:py-24 bg-background-light dark:bg-black/20"
+          >
+            <div class="text-center mb-12">
+              <h2
+                class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 text-glow"
+              >
+                My Skills
+              </h2>
+              <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                A showcase of my expertise in various technologies, from
+                front-end to back-end and essential development tools.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div
+                class="bg-white dark:bg-card-dark border border-gray-200 dark:border-border-dark p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
+              >
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-4"
+                >
+                  MERN Stack
+                </h3>
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >MongoDB</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >85%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 85%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >Express.js</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >90%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >React &amp; Next.js</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >95%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 95%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >Node.js</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >92%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 92%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white dark:bg-card-dark border border-gray-200 dark:border-border-dark p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
+              >
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-4"
+                >
+                  Frontend Technologies
+                </h3>
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >HTML &amp; CSS</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >98%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 98%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >JavaScript &amp; TypeScript</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >94%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 94%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >Tailwind CSS</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >96%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 96%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >Redux Toolkit</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >90%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white dark:bg-card-dark border border-gray-200 dark:border-border-dark p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
+              >
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-white mb-4"
+                >
+                  Tools &amp; Other Tech
+                </h3>
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >Git &amp; GitHub</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >95%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 95%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >Docker</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >80%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 80%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >RESTful APIs &amp; GraphQL</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >88%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 88%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span
+                        class="text-base font-medium text-gray-700 dark:text-gray-300"
+                        >Jest &amp; Testing Library</span
+                      >
+                      <span
+                        class="text-sm font-medium text-gray-600 dark:text-gray-400"
+                        >85%</span
+                      >
+                    </div>
+                    <div
+                      class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5"
+                    >
+                      <div
+                        class="bg-primary h-2.5 rounded-full"
+                        style="width: 85%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="px-8 py-16 md:px-12 md:py-24 bg-background-light dark:bg-black/10 relative overflow-hidden"
+          >
+            <div
+              class="absolute -top-16 left-1/4 w-72 h-72 bg-purple-600/50 rounded-full mix-blend-screen filter blur-3xl opacity-10 dark:opacity-10 animate-pulse"
+            ></div>
+            <div
+              class="absolute -bottom-16 right-1/4 w-72 h-72 bg-blue-600/50 rounded-full mix-blend-screen filter blur-3xl opacity-10 dark:opacity-10 animate-delayed-pulse"
+              style="animation-delay: 1000ms"
+            ></div>
+            <div class="relative z-10 max-w-6xl mx-auto">
+              <div class="text-center mb-16">
+                <h2
+                  class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 text-glow"
+                >
+                  My Projects
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                  Here are some of the projects I've worked on, showcasing my
+                  skills in the MERN stack and beyond.
+                </p>
+              </div>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div
+                  class="group bg-card-dark border border-border-dark p-6 rounded-lg transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-purple-600/10"
+                >
+                  <div class="relative mb-5 overflow-hidden rounded">
+                    <img
+                      alt="E-commerce Platform Thumbnail"
+                      class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhllemM4OZjQzZBxJ-8oADXLP4usK-23SjzO-h-0A9cewH37SnigmRNfB7DCENBumOpAcrWyA5NWckxvUj47cP1SPT400I8cmW_xMwwP9NrCcGSxzxMTeIU9-Ekys2ivu0Rsu7hoZZQPJx3E8OmZMzOR1z4ujRFoB4NWZ4-5PzV0c2F0nimoGz2DU4TZ1y72xiuinQ5lfj_hFC9fCFFEYI6ol59mb6r6hLEcuyAgnRA8JU_rLFkJwz9Erp8iTkruPNBB4thE9YUkD_"
+                    />
+                    <div
+                      class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                  </div>
+                  <h3 class="text-xl font-semibold text-white mb-2">
+                    E-commerce Platform
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-4 text-sm">
+                    A full-featured e-commerce website with product management,
+                    user authentication, and a streamlined checkout process.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-5">
+                    <span
+                      class="text-xs font-medium bg-primary/20 text-gray-300 px-2.5 py-1 rounded-full"
+                      >React</span
+                    >
+                    <span
+                      class="text-xs font-medium bg-primary/20 text-gray-300 px-2.5 py-1 rounded-full"
+                      >Node.js</span
+                    >
+                    <span
+                      class="text-xs font-medium bg-primary/20 text-gray-300 px-2.5 py-1 rounded-full"
+                      >MongoDB</span
+                    >
+                    <span
+                      class="text-xs font-medium bg-primary/20 text-gray-300 px-2.5 py-1 rounded-full"
+                      >Redux</span
+                    >
+                  </div>
+                  <div class="flex items-center space-x-4">
+                    <a
+                      class="inline-flex items-center text-sm font-medium text-white hover:text-gray-300 transition-colors"
+                      href="#"
+                    >
+                      <span class="material-symbols-outlined mr-1.5 text-lg"
+                        >link</span
+                      >
+                      Live Demo
+                    </a>
+                    <a
+                      class="inline-flex items-center text-sm font-medium text-white hover:text-gray-300 transition-colors"
+                      href="#"
+                    >
+                      <img
+                        alt="GitHub icon"
+                        class="w-4 h-4 mr-1.5 filter invert"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqoD_dOrkK29lohzbLy45paNq2k-pnh5gaVwqbSU4w7yh758bhvvZVPNP4pelNnUkm2vPGM3a8jRXD6q_jriQmkkIhrupPiwRNA8GlRgYvcT8rMZ8swwyIgt3dc92EUcW59vhgDxDkDFe10McgdOeLt623OkVOBzADAxMBJs40VEZgRV3xxD1aGOnnQer6-GZilpdLGYu5H4NbY27XyLT_3cjV_xyzEudBHWllWUoVumQ6sJhVTtu6gkGBLfW8437c4dbcAjPJfbph"
+                      />
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="group bg-card-dark border border-border-dark p-6 rounded-lg transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-blue-600/10"
+                >
+                  <div class="relative mb-5 overflow-hidden rounded">
+                    <img
+                      alt="Project Management Tool Thumbnail"
+                      class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDogIHcrFdUKKod8eQ_NbVVFCdVeyjr-5RlIz8OXS1dLVXESryNQBG84tFl94eGLcw79sCm5mUY_8d90cKelv4gJCURDbOAWZrhPyld_DRUmnlKfBFm2WplmpWMCv9Sud6nX0jV3mXPsfWmT_W4dcgElyN5T_vgOGlXk1oPHF8KVyyKK1nfOa3NITP6yHVvfVUQpgjsN-RC-Y6iUpXyZe5krP8vKK0NtgZjYn6bdNd6azXdurhH0PatdfP2J5bIi07qS98vJN2yQOq0"
+                    />
+                    <div
+                      class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                  </div>
+                  <h3 class="text-xl font-semibold text-white mb-2">
+                    Task Manager App
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed mb-4 text-sm">
+                    A collaborative task management tool with boards, lists, and
+                    cards, inspired by Trello, built with real-time updates.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-5">
+                    <span
+                      class="text-xs font-medium bg-primary/20 text-gray-300 px-2.5 py-1 rounded-full"
+                      >Next.js</span
+                    >
+                    <span
+                      class="text-xs font-medium bg-primary/20 text-gray-300 px-2.5 py-1 rounded-full"
+                      >TypeScript</span
+                    >
+                    <span
+                      class="text-xs font-medium bg-primary/20 text-gray-300 px-2.5 py-1 rounded-full"
+                      >Express</span
+                    >
+                    <span
+                      class="text-xs font-medium bg-primary/20 text-gray-300 px-2.5 py-1 rounded-full"
+                      >Socket.IO</span
+                    >
+                  </div>
+                  <div class="flex items-center space-x-4">
+                    <a
+                      class="inline-flex items-center text-sm font-medium text-white hover:text-gray-300 transition-colors"
+                      href="#"
+                    >
+                      <span class="material-symbols-outlined mr-1.5 text-lg"
+                        >link</span
+                      >
+                      Live Demo
+                    </a>
+                    <a
+                      class="inline-flex items-center text-sm font-medium text-white hover:text-gray-300 transition-colors"
+                      href="#"
+                    >
+                      <img
+                        alt="GitHub icon"
+                        class="w-4 h-4 mr-1.5 filter invert"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH1WXEp73XB79YCHD8QDGhKrhBh5cLp_m8sAaPFUm2sl_-6CXR2pqVrf_OPLiDb7IeRQ_smmif116MahOloHMWyH2C6KTNDd4dKpUDETSNcLGjKo0Z1D3ceaNnLLvLEFC2ZhKcNff73G9JAzpJlYTXI_AZTrduoThIUjUuMumSvsVNthWps_1pIIH3un27DfBhgtbNz07EDSqnJ8K9-osKi78dqm1zSced6E0xkDqzt7HtA1akovG0BrlS1gUYWLsZhLi2K5WmnegO"
+                      />
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="px-8 py-16 md:px-12 md:py-24 bg-background-light dark:bg-black/20"
+          >
+            <div class="max-w-6xl mx-auto">
+              <div class="text-center mb-16">
+                <h2
+                  class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 text-glow"
+                >
+                  Get In Touch
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                  I'm always open to discussing new projects, creative ideas, or
+                  opportunities to be part of your visions.
+                </p>
+              </div>
+              <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
+                <div
+                  class="bg-card-dark border border-border-dark p-6 md:p-8 rounded-lg"
+                >
+                  <form action="#" class="space-y-6">
+                    <div>
+                      <label
+                        class="block text-sm font-medium text-gray-300 mb-2"
+                        for="name"
+                        >Name</label
+                      >
+                      <input
+                        class="block w-full bg-black/20 border-border-dark rounded-md shadow-sm py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-medium text-gray-300 mb-2"
+                        for="email"
+                        >Email</label
+                      >
+                      <input
+                        class="block w-full bg-black/20 border-border-dark rounded-md shadow-sm py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        type="email"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-medium text-gray-300 mb-2"
+                        for="message"
+                        >Message</label
+                      >
+                      <textarea
+                        class="block w-full bg-black/20 border-border-dark rounded-md shadow-sm py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                        id="message"
+                        name="message"
+                        placeholder="Your message"
+                        rows="4"
+                      ></textarea>
+                    </div>
+                    <div>
+                      <button
+                        class="w-full bg-primary text-white py-3 px-6 rounded-lg font-medium hover:bg-opacity-80 transition-colors"
+                        type="submit"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="flex flex-col justify-center space-y-8">
+                  <div class="flex items-start space-x-5">
+                    <div class="flex-shrink-0">
+                      <div
+                        class="flex items-center justify-center h-12 w-12 rounded-full bg-card-dark border border-border-dark text-white"
+                      >
+                        <span class="material-symbols-outlined">mail</span>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold text-white">Email</h3>
+                      <p class="text-gray-400">bandeye.khodaa@example.com</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-5">
+                    <div class="flex-shrink-0">
+                      <div
+                        class="flex items-center justify-center h-12 w-12 rounded-full bg-card-dark border border-border-dark text-white"
+                      >
+                        <span class="material-symbols-outlined">public</span>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold text-white">
+                        Social Media
+                      </h3>
+                      <div class="flex space-x-4 mt-1">
+                        <a
+                          class="text-gray-400 hover:text-white transition-colors"
+                          href="#"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="h-6 w-6"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              clip-rule="evenodd"
+                              d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.218.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
+                              fill-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </a>
+                        <a
+                          class="text-gray-400 hover:text-white transition-colors"
+                          href="#"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="h-6 w-6"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-5">
+                    <div class="flex-shrink-0">
+                      <div
+                        class="flex items-center justify-center h-12 w-12 rounded-full bg-card-dark border border-border-dark text-white"
+                      >
+                        <span class="material-symbols-outlined"
+                          >location_on</span
+                        >
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold text-white">Location</h3>
+                      <p class="text-gray-400">Tehran, Iran</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script>
+      // This is just a helper script for the demo, not part of the core design.
+      // It is used to toggle dark mode.
+      const a = document.createElement("a");
+      a.href = "javascript:document.documentElement.classList.toggle('dark')";
+      a.innerText = "Toggle Dark Mode";
+      a.className =
+        "fixed bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-lg shadow-lg z-50";
+      document.body.appendChild(a);
+    </script>
+  </body>
+</html>
